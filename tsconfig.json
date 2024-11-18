@@ -22,6 +22,7 @@
       "@/images/*": ["./public/images/*"],
       "@/providers/*": ["./src/providers/*"],
       "@/components/*": ["./src/components/*"], 
+      "@/utils/*": ["./src/utils/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

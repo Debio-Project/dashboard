@@ -1,12 +1,14 @@
 "use client";
 
-import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
+import Outlet from "@/components/outlet";
+import SideBar from "@/components/sidebar";
 
 export default function Home() {
 
   return (
-    <main>
-      <WalletMultiButton style={{}} />
+    <main className="flex">
+      <SideBar />
+      <Outlet />
     </main>
   );
 }
