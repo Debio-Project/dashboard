@@ -1,4 +1,4 @@
-import { IProduct, ISlider } from '@/types/slider'
+import { IProduct, ISlider } from '@/types'
 import React from 'react'
 import thumbnail from '@/images/slider/bg-thumbnail.png'
 import avatar from '@/images/slider/avatar.png'
@@ -95,7 +95,7 @@ const Projects = () => {
     <main className='text-white lg:w-[1008px] mx-auto'>
           <section className='lg:h-[390px]'>
             <Slider data={array} />
-          </section>
+          </section> 
           <section className='lg:w-[470px]'>
               <div className='flex items-center gap-x-3'>
                   <figure className='w-8 h-8'>

@@ -15,3 +15,15 @@ export interface IProduct {
     desc: string;
     category: string[];
 }
+
+export interface Job {
+    title: string;
+    date: string;
+    description: string;
+    location: string;
+    type: string;
+    workMode: string;
+    company: string;
+    createdBy: string;
+    applyLink: string;
+}

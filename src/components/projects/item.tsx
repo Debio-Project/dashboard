@@ -2,7 +2,7 @@ import React from 'react'
 import item1 from '@/images/projects/Main Image.png'
 import icon1 from '@/images/projects/image.png'
 import Image from 'next/image'
-import { IProduct } from '@/types/slider'
+import { IProduct } from '@/types'
 const ProjectItem = ({product}:{product: IProduct}) => {
   return (
     <main className='h-[312px] flex flex-col rounded-lg'>

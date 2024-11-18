@@ -1,4 +1,4 @@
-import { ISlider } from '@/types/slider'
+import { ISlider } from '@/types'
 import Image from 'next/image';
 import React from 'react'
 // Import Swiper styles
