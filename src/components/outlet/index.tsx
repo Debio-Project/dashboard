@@ -14,7 +14,7 @@ const Outlet = () => {
   },[params])
 
   return (
-    <main className='bg-black py-3 px-4 grow'>
+    <main className='bg-black py-3 px-4 grow h-svh overflow-y-scroll pb-10'>
       {handleRenderComponent}
     </main>
   )
