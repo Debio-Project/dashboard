@@ -105,7 +105,7 @@ const Projects = () => {
               </div>
               <p className='text-[#798675] text-sm font-semibold mt-4'>Filter and interact with the world of DeBio. All projects are listed by communities and approved by DeBioWorld.</p>
           </section>
-          {/* filter */}
+          {/* TODO */}
           <div></div>
 
           <section className='mt-6'>

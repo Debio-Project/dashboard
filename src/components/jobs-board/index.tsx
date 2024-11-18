@@ -80,7 +80,7 @@ const JobBoard = () => {
         </div>
         <p className='text-[#798675] text-sm font-semibold mt-4'>Find trusted work opportunities and work with the best companies in DeBio. Applications for listed jobs are currently facilitated through external links.</p>
       </section>
-      {/* filter */}
+      {/* TODO */}
       <div></div>
 
       <section className='mt-6'>
