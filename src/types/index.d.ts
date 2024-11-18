@@ -27,3 +27,8 @@ export interface Job {
     createdBy: string;
     applyLink: string;
 }
+
+export enum SwiperType { 
+    PROJECT = 1,
+    JOB = 2,
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import Slider from '../slider'
-import { ISlider, Job } from '@/types'
+import { ISlider, Job, SwiperType } from '@/types'
 import thumbnail from '@/images/slider/bg-thumbnail.png'
 import avatar from '@/images/slider/avatar.png'
 import Image from 'next/image'
@@ -14,17 +14,17 @@ const JobBoard = () => {
       thumbnail: thumbnail,
       logo: avatar.src,
       type: 'CoopHive',
-      title: 'Trading floor for autonomous agents',
-      desc: 'DeBio is the next evolution of research; onchain, unstoppable and powered by the most cutting-edge technology.',
-      category: ['AI', 'Computer', 'Science Defi']
+      title: 'Staff front end engineer',
+      desc: `We are seeking a passionate and detail-oriented Front-End Engineer to develop and maintain high-quality user interfaces for DeBio's web applications. You will collaborate closely with our design and backend teams to create responsive, intuitive, and visually appealing web experiences. `,
+      category: ['New York, United State', 'Employee', 'Hybrid']
     },
     {
       thumbnail: thumbnail,
       logo: avatar.src,
       type: 'CoopHive',
-      title: 'Trading floor for autonomous agents',
-      desc: 'DeBio is the next evolution of research; onchain, unstoppable and powered by the most cutting-edge technology.',
-      category: ['AI', 'Computer', 'Science Defi']
+      title: 'Staff back end engineer',
+      desc: `We are seeking a passionate and detail-oriented Front-End Engineer to develop and maintain high-quality user interfaces for DeBio's web applications. You will collaborate closely with our design and backend teams to create responsive, intuitive, and visually appealing web experiences. `,
+      category: ['New York, United State', 'Employee', 'Hybrid']
     }
   ]
 
@@ -69,7 +69,7 @@ const JobBoard = () => {
   return (
     <main className='text-white lg:w-[1008px] mx-auto'>
       <section className='lg:h-[390px]'>
-        <Slider data={array} />
+        <Slider data={array} type={2}/>
       </section>
       <section className='lg:w-[470px]'>
         <div className='flex items-center gap-x-3'>

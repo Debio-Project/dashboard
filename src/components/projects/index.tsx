@@ -1,4 +1,4 @@
-import { IProduct, ISlider } from '@/types'
+import { IProduct, ISlider, SwiperType } from '@/types'
 import React from 'react'
 import thumbnail from '@/images/slider/bg-thumbnail.png'
 import avatar from '@/images/slider/avatar.png'
@@ -6,12 +6,12 @@ import icPara from '@/images/ic-para.svg'
 import Slider from '../slider'
 import Image from 'next/image'
 import ProjectItem from './item'
-import item1 from '@/images/projects/Main Image.png'
-import item2 from '@/images/projects/Main Image (1).png'
-import item3 from '@/images/projects/Main Image (2).png'
-import item4 from '@/images/projects/Main Image (3).png'
-import item5 from '@/images/projects/Main Image (4).png'
-import item6 from '@/images/projects/Main Image (5).png'
+import item1 from '@/images/image.png'
+import item2 from '@/images/image (1).png'
+import item3 from '@/images/image (2).png'
+import item4 from '@/images/image (3).png'
+import item5 from '@/images/image (4).png'
+import item6 from '@/images/image (5).png'
 import ic1 from '@/images/projects/image.png'
 import ic2 from '@/images/projects/image (1).png'
 import ic3 from '@/images/projects/image (2).png'
@@ -44,32 +44,32 @@ const Projects = () => {
         {
             thumbnail: item1,
             logo: ic1,
-            type: "Worldwide",
-            title: "Follow the Black Hare",
-            desc: "DeBio is the next evolution of research: onchain, unstoppable and powered by the most cutting-edge blockchain technology",
-            category: ["Community", "NFT", "Space"]
+            type: "Online",
+            title: "GeneFlow",
+            desc: "Revolutionizing Healthcare with Blockchain-Backed Genetic Data",
+            category: ["Blockchain", "Genomics", "Data Privacy"]
         },
         {
             thumbnail: item2,
             logo: ic2,
             type: "Online",
             title: "OpenSpace",
-            desc: "Web3 Solutions for Open Space Exploration",
-            category: ["AI", "Data", "Ecosystem"]
+            desc: "Building a Transparent Food Supply with Blockchain for Agriculture",
+            category: ["Blockchain", "Data", "Agriculture"]
         },
         {
             thumbnail: item3,
             logo: ic3,
             type: "Worldwide",
-            title: "EcosynthesisX",
-            desc: "EcosynthesisX: Driving Real-World Impact through Web3 and Blockchain",
-            category: ["Blockchain Protocol", "Funding", "NFT"]
+            title: "NeuroLedger",
+            desc: "Using Blockchain to Secure and Share Neuroscience Data Globally",
+            category: ["Neuroscience", "Data Sharing", "NFT"]
         },
         {
             thumbnail: item4,
             logo: ic4,
             type: "Worldwide",
-            title: "Hippocrat",
+            title: "HelixDAO",
             desc: "Decentralized healthcare platform",
             category: ["Health", "Blockchain", "DeFi"]
         },
@@ -78,14 +78,14 @@ const Projects = () => {
             logo: ic5,
             type: "Decentralized",
             title: "Preprints",
-            desc: "A Decentralized Research Repository",
+            desc: "BioVerse",
             category: ["Publication", "Research", "Decentralized"]
         },
         {
             thumbnail: item6,
             logo: ic6,
-            type: "UAE",
-            title: "BitDoctor.ai",
+            type: "Ras Al-Khaimah",
+            title: "CellBlock",
             desc: "An AI Health App that Saves Lives",
             category: ["AI", "Healthcare", "Technology"]
         }
@@ -94,7 +94,7 @@ const Projects = () => {
   return (
     <main className='text-white lg:w-[1008px] mx-auto'>
           <section className='lg:h-[390px]'>
-            <Slider data={array} />
+            <Slider data={array} type={1}/>
           </section> 
           <section className='lg:w-[470px]'>
               <div className='flex items-center gap-x-3'>
@@ -109,7 +109,7 @@ const Projects = () => {
           <div></div>
 
           <section className='mt-6'>
-              <p className='text-[#8CE339] text-sm font-semibold mb-6'>32 projects available</p>
+              <p className='text-[#8CE339] text-sm font-semibold mb-6'>6 projects available</p>
               <div className='grid grid-cols-3 gap-4'>
                   {products.map((product, index) => {
                       return <ProjectItem key={index} product={product} />
